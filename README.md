@@ -17,6 +17,12 @@ understanding quickly and even have fun.
 - My contributions to this repository usually happen during free learning and slack time. As a consequence, I will take some business days to react to your messages.
 - At the time of writing, I have some material I would like to commit to this repository step by step. So I expect activity at least for a month or two.
 
+## Step-by-Step Guides
+
+0. [Install the required tools](prerequisites.md)
+1. [Configure the review context](configure-review-context.md)
+2. [Analyze Git Statistics](analyze-git-stats.md) - Understand size, development cycles, authors.
+
 ## Links and References
 
 - [Adam Tornhill: Your Code as a Crime Scene](https://pragprog.com/titles/atcrime/your-code-as-a-crime-scene/)
