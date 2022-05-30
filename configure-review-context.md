@@ -20,10 +20,18 @@ export CODE_READING=
 # Path to your local gitstats checkout
 export GITSTATS=
 
+# Path to your local maat-scripts checkout
+export MAAT_SCRIPTS=
+
+# Path to the extracted Code Maat visualization
+# Download from section "Download the samples" in https://adamtornhill.com/code/crimescenetools.htm
+export MAAT_SAMPLE=
+
 # Full path to the checked out repository
 export REPOSITORY_PATH=
 
 # Date format: YYYY-MM-DD
-export FIRST_COMMIT_DATE=
+export DAY_BEFORE_FIRST_COMMIT_DATE=
 export LAST_COMMIT_HASH=
+export BASE_COMMIT_HASH=
 ```
