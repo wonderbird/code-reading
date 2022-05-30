@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
+#
+# Analyze hotspots of complexity and effort
+#
+# Prerequisites
+# - The analysis must be executed from the analysis folder
+# - The configuration file configuration.env must be sourced first
+#
 set -euf
 
 function copy_files_to() {
