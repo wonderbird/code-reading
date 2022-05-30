@@ -19,11 +19,12 @@ understanding quickly and even have fun.
 
 ## Step-by-Step Guides
 
-0. [Install the required tools](prerequisites.md)
-1. [Configure the review context](configure-review-context.md)
+0. [Install the Required Tools](prerequisites.md)
+1. [Configure the Review Context](configure-review-context.md)
 2. [Analyze Git Statistics](analyze-git-stats.md) - Understand size, development cycles, authors.
 3. [Analyze Hotspots](analyze-hotspots.md) - Find hotspots of effort and complexity.
 4. [Analyze Trend of Hotspot Complexity](analyze-complexity-trend.md) - Track the evolution of complexity for hotspots.
+5. [Analyze Duplicated Code](analyze-duplicated-code.md) - Run the Copy-Paste Detector (CPD) to find code duplication.
 
 ## Links and References
 

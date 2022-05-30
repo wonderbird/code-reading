@@ -61,6 +61,9 @@ docker build -f Dockerfile --tag code-maat-app .
 git clone https://github.com/adamtornhill/maat-scripts.git
 cd maat-scripts
 git checkout python3
+
+# Install dependencies
+python -m pip install -r requirements.txt
 ```
 
 #### Code Maat Sample Visualizations
@@ -69,3 +72,11 @@ Download and extract the pre-generated visualizations from section "Download the
 Scene: The Tools](https://adamtornhill.com/code/crimescenetools.htm).
 
 The extracted folder will configured as the `MAAT_SAMPLE` environment variable in the `configuration.env` file later.
+
+#### CPD
+
+The Copy Paste Detector from the [PMD Source Code Analyzer](https://pmd.github.io) project can be installed via [homebrew](https://brew.sh):
+
+```sh
+brew install pmd
+```
