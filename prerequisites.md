@@ -1,6 +1,10 @@
 ## Prerequisites
 
-For the analyses described in this repository, you need the following tools:
+For the analyses described in this repository are run on macOS >= 12.4 (Monterey). You need the following tools:
+
+### Python3
+
+The tools listed below require [Python version 3](https://www.python.org/).
 
 ### GitStats
 
