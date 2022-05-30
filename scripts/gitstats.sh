@@ -16,7 +16,7 @@ fi
 # Generate HTML report
 cd "$REPOSITORY_PATH" || exit 1
 git checkout "$LAST_COMMIT_HASH"
-python "$GITSTATS/gitstats" -c start_date="$FIRST_COMMIT_DATE" ./ "$TARGET_DIR/gitstats"
+python "$GITSTATS/gitstats" -c start_date="$DAY_BEFORE_FIRST_COMMIT_DATE" ./ "$TARGET_DIR/gitstats"
 cd "$TARGET_DIR" || exit 0
 
 # Print results

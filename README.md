@@ -22,6 +22,7 @@ understanding quickly and even have fun.
 0. [Install the required tools](prerequisites.md)
 1. [Configure the review context](configure-review-context.md)
 2. [Analyze Git Statistics](analyze-git-stats.md) - Understand size, development cycles, authors.
+3. [Analyze Hotspots](analyze-hotspots.md) - Find hotspots of effort and complexity.
 
 ## Links and References
 
