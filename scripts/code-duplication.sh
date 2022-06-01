@@ -22,10 +22,6 @@ if [ -z "$PROGRAMMING_LANGUAGE" ]; then
     exit 1
 fi
 
-# Cleanup
-if [ -d "$TARGET_DIR/code_duplication" ]; then
-    rm -r "$TARGET_DIR/code_duplication"
-fi
 mkdir -p "$TARGET_DIR/code_duplication"
 
 # Find Code Dupliation
