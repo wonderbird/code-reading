@@ -1,6 +1,16 @@
 ## Prerequisites
 
-For the analyses described in this repository are run on macOS >= 12.4 (Monterey). You need the following tools:
+The installation instruction for the tools below are written for macOS >= 12.4 (Monterey).
+
+### Visual Studio Code Dev Container
+
+If you have Docker and Visual Studio Code, then you can re-open this folder in a Dev Container. See [Create a Dev
+Container](https://code.visualstudio.com/docs/devcontainers/create-dev-container) for more information.
+
+This will bring [Python version 3](https://www.python.org/) and [gitstats](https://github.com/gktrk/gitstats).
+
+It also contains [cloc](https://github.com/AlDanial/cloc), but if you want to analyze X++ code, then please use the
+mechanism described below.
 
 ### Python3
 
