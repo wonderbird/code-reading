@@ -7,7 +7,13 @@ The installation instruction for the tools below are written for macOS >= 12.4 (
 If you have Docker and Visual Studio Code, then you can re-open this folder in a Dev Container. See [Create a Dev
 Container](https://code.visualstudio.com/docs/devcontainers/create-dev-container) for more information.
 
-This will bring [Python version 3](https://www.python.org/) and [gitstats](https://github.com/gktrk/gitstats).
+This will bring the following:
+
+- [Python version 3](https://www.python.org/)
+- [gitstats](https://github.com/gktrk/gitstats)
+- [maat-scripts](https://github.com/adamtornhill/maat-scripts)
+- Code Maat Sample Visualizations
+- [PMD Source Code Analyzer](https://pmd.github.io)
 
 It also contains [cloc](https://github.com/AlDanial/cloc), but if you want to analyze X++ code, then please use the
 mechanism described below.
