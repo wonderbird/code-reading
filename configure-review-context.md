@@ -18,13 +18,17 @@ export TARGET_DIR=$PWD
 export CODE_READING=
 
 # Path to your local gitstats checkout
+# Assuming you keep all your GitHub clones in $HOME/source, you can find the correct path in the output of
+# find "$HOME/source" -iname "*gitstats*" -type d
 export GITSTATS=
 
 # Path to your local maat-scripts checkout
+# find "$HOME/source" -iname "*maat*" -type d
 export MAAT_SCRIPTS=
 
 # Path to the extracted Code Maat visualization
 # Download from section "Download the samples" in https://adamtornhill.com/code/crimescenetools.htm
+# find "$HOME/source" -iname "*sample*" -type d
 export MAAT_SAMPLE=
 
 # Full path to the checked out repository
