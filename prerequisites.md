@@ -64,6 +64,11 @@ git checkout python3
 
 # Install dependencies
 python -m pip install -r requirements.txt
+
+# If you cannot install dependencies system wide, then create a virtual environment and install them there
+python3 -m venv ./venv
+source ./venv/bin/activate
+python3 -m pip install -r requirements.txt
 ```
 
 #### Code Maat Sample Visualizations

@@ -20,7 +20,7 @@ kdiff3 "$TARGET_DIR/hotspots/changeset_files.txt" "$TARGET_DIR/hotspots/copied_f
 cat "$TARGET_DIR/hotspots/hotspots.csv"
 
 # Run a python server on http://localhost:8888/ to view the hotspot visualization:
-pushd "$TARGET_DIR/hotspots" && python -m http.server 8888 && popd
+pushd "$TARGET_DIR/hotspots" && python3 -m http.server 8888 && popd
 open "http://localhost:8888/hotspots.html"
 ```
 

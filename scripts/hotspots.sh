@@ -54,7 +54,7 @@ sed -i '' 's/^\.\///' "$TARGET_DIR/hotspots/copied_files.txt";
 
 # Calculate Lines of Code per file as a complexity proxy metric
 echo "Analyze LoC per changed file ..."
-docker run -v "$PWD:/data" --rm --name cloc cloc-app /data --by-file --csv --quiet "--report-file=/data/lines.csv"
+docker run -v "$PWD:/data" --rm --name cloc cloc-app /data --by-file --csv --quiet --force-lang=c,bc "--report-file=/data/lines.csv"
 mv "lines.csv" "$TARGET_DIR/hotspots"
 sed -i '' 's/\/data\///' "$TARGET_DIR/hotspots/lines.csv"
 
@@ -69,10 +69,10 @@ docker run -v "$TARGET_DIR/hotspots":/data -it code-maat-app -l "/data/evo.log" 
 
 # Combine LoC and change frequencies to identify hotspots
 echo "Generate hotpots.csv ..."; \
-python "$MAAT_SCRIPTS/merge/merge_comp_freqs.py" "$TARGET_DIR/hotspots/freqs.csv" "$TARGET_DIR/hotspots/lines.csv" > "$TARGET_DIR/hotspots/hotspots.csv"
+python3 "$MAAT_SCRIPTS/merge/merge_comp_freqs.py" "$TARGET_DIR/hotspots/freqs.csv" "$TARGET_DIR/hotspots/lines.csv" > "$TARGET_DIR/hotspots/hotspots.csv"
 
 echo "Generate Hotspot Visualization (HTML + D3) ..."
-python "$MAAT_SCRIPTS/transform/csv_as_enclosure_json.py" --structure "$TARGET_DIR/hotspots/lines.csv" --weights "$TARGET_DIR/hotspots/freqs.csv" --weightcolumn 1 > "$TARGET_DIR/hotspots/hotspot_proto.json"
+python3 "$MAAT_SCRIPTS/transform/csv_as_enclosure_json.py" --structure "$TARGET_DIR/hotspots/lines.csv" --weights "$TARGET_DIR/hotspots/freqs.csv" --weightcolumn 1 > "$TARGET_DIR/hotspots/hotspot_proto.json"
 mkdir "$TARGET_DIR/hotspots/d3"
 cp "$MAAT_SAMPLE/hibernate/d3/d3.min.js" "$MAAT_SAMPLE/hibernate/d3/LICENSE" "$TARGET_DIR/hotspots/d3/"
 cp "$MAAT_SAMPLE/hibernate/hibzoomable.html" "$TARGET_DIR/hotspots/hotspots.html"
