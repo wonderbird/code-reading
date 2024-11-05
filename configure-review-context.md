@@ -31,6 +31,8 @@ export MAAT_SAMPLE=
 export REPOSITORY_PATH=
 
 # Date format: YYYY-MM-DD
+# You can find the first commit of interest by
+# git log --pretty=format:'%ad,%an[%h]' --date=short --after=2023-08-01 | sort -rg
 export DAY_BEFORE_FIRST_COMMIT_DATE=
 export LAST_COMMIT_HASH=
 export BASE_COMMIT_HASH=
