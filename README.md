@@ -25,6 +25,7 @@ understanding quickly and even have fun.
 3. [Analyze Hotspots](analyze-hotspots.md) - Find hotspots of effort and complexity.
 4. [Analyze Trend of Hotspot Complexity](analyze-complexity-trend.md) - Track the evolution of complexity for hotspots.
 5. [Analyze Duplicated Code](analyze-duplicated-code.md) - Run the Copy-Paste Detector (CPD) to find code duplication.
+6. [Identify Examples of Complex Code](identify-complex-code.md) - Find files with highest accumulated whitespace complexity.
 
 ## Links and References
 
