@@ -54,9 +54,9 @@ sed -i '' 's/^\.\///' "$TARGET_DIR/hotspots/copied_files.txt";
 
 # Calculate Lines of Code per file as a complexity proxy metric
 echo "Analyze LoC per changed file ..."
-docker run -v "$PWD:/data" --rm --name cloc cloc-app /data --by-file --csv --quiet --force-lang=c,bc "--report-file=/data/lines.csv"
+cloc ./ --by-file --csv --quiet --force-lang=c,bc "--report-file=lines.csv"
 mv "lines.csv" "$TARGET_DIR/hotspots"
-sed -i '' 's/\/data\///' "$TARGET_DIR/hotspots/lines.csv"
+sed -i '' 's/,\.\//,/' "$TARGET_DIR/hotspots/lines.csv"
 
 # Export git history for code maat
 echo "Export git history ..."

@@ -27,13 +27,9 @@ programming languages. Hotspot complexity is calculated quickly by counting the 
 Usually this measure correlates well with cyclomatic complexity (see section "Get Complexity by Lines of Code" in [Adam
 Tornhill: Your Code as a Crime Scene](https://pragprog.com/titles/atcrime/your-code-as-a-crime-scene/)).
 
-Because I use the [X++ modification of cloc](https://github.com/AlDanial/cloc/pull/634), this repository uses the latest
-cloc version in a docker container:
-
 ```sh
-git clone https://github.com/AlDanial/cloc.git
-cd cloc
-docker build -f Dockerfile --tag cloc-app .
+# Cloc is provided by homebrew
+brew install cloc
 ```
 
 #### Code Maat
