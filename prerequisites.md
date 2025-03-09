@@ -56,6 +56,8 @@ docker build -f Dockerfile --tag code-maat-app .
 ```sh
 git clone https://github.com/adamtornhill/maat-scripts.git
 cd maat-scripts
+
+# Python 3 gives errors, if you don't switch to the python3 branch
 git checkout python3
 
 # Install dependencies
