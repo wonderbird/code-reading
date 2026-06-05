@@ -50,13 +50,13 @@ copy_files_to "$TARGET_DIR/hotspots/changeset_files.txt" "$TARGET_DIR/hotspots/l
 # Verify that all files have been copied
 cd "$TARGET_DIR/hotspots/latest" || exit 1
 find . -type f | sort -g > "$TARGET_DIR/hotspots/copied_files.txt"
-sed -i '' 's/^\.\///' "$TARGET_DIR/hotspots/copied_files.txt";
+sed -i 's/^\.\///' "$TARGET_DIR/hotspots/copied_files.txt";
 
 # Calculate Lines of Code per file as a complexity proxy metric
 echo "Analyze LoC per changed file ..."
 cloc ./ --by-file --csv --quiet --force-lang=c,bc "--report-file=lines.csv"
 mv "lines.csv" "$TARGET_DIR/hotspots"
-sed -i '' 's/,\.\//,/' "$TARGET_DIR/hotspots/lines.csv"
+sed -i 's/,\.\//,/' "$TARGET_DIR/hotspots/lines.csv"
 
 # Export git history for code maat
 echo "Export git history ..."
@@ -76,7 +76,7 @@ python3 "$MAAT_SCRIPTS/transform/csv_as_enclosure_json.py" --structure "$TARGET_
 mkdir "$TARGET_DIR/hotspots/d3"
 cp "$MAAT_SAMPLE/hibernate/d3/d3.min.js" "$MAAT_SAMPLE/hibernate/d3/LICENSE" "$TARGET_DIR/hotspots/d3/"
 cp "$MAAT_SAMPLE/hibernate/hibzoomable.html" "$TARGET_DIR/hotspots/hotspots.html"
-sed -i '' "s/hib_hotspot_proto/hotspot_proto/g" "$TARGET_DIR/hotspots/hotspots.html"
+sed -i "s/hib_hotspot_proto/hotspot_proto/g" "$TARGET_DIR/hotspots/hotspots.html"
 
 # Print a summary
 
